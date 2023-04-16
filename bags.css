@@ -1,0 +1,111 @@
+body{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:1.6rem;
+    background-image: url(bags\ \(2\).png);
+    background-attachment: fixed;
+    color:aliceblue;
+}
+.pg-links p{
+    display:inline;
+}
+.pg-links p a{
+    padding-inline: 3%;
+    text-decoration: none;
+    color:aliceblue;
+}
+.owner-name p{
+    padding-inline:3rem;
+    font-style:oblique;
+    font-weight: 700;
+    font-size: 2rem;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+}
+.pg-links{
+    padding-block: auto;
+    width: 45rem;
+    margin-inline: 1%;
+}
+.nav-mn{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0%;
+}
+.header-mn{
+    position:sticky;
+    min-width:100%;
+    backdrop-filter: blur(5px);
+    top:0;
+}
+.num{
+    border-bottom: 1px solid rgb(217, 217, 218);
+    width:18rem;
+}
+.num p{
+    padding-bottom: 0;
+    margin-bottom: 0.8rem;
+}
+#owner-name{
+    padding-left:8rem;
+    font-size: 2rem;
+    color:rgb(228, 223, 221);
+    transition:text-shadow 0.1s ease;
+}
+#owner-name:hover{
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+}
+#bag1{
+    z-index: auto;
+    width: 45rem;
+    border-radius: 1.5rem;
+    transition: scale 0.29s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+#bag1:hover{
+    scale:99.5%;
+    z-index:-1;;
+    box-shadow:  .6rem .6rem rgba(0, 0, 0, 0.411);
+}
+.hero-2{
+    text-align: center;
+    padding-right: 10%;
+}
+.hero-1{
+    padding-left: 10%;
+}
+.hero-sec{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 6rem;
+    cursor: default;
+}
+.sec-1-one{
+    width:45rem;
+    height:26.125rem;
+    margin-right: 0;
+    margin-left: 5%;
+}
+.sec-1-one :is(#ig-1, #ig-2){
+    position:absolute;
+    width:45rem;
+    border-radius: 1rem;
+}
+#ig-2{
+    opacity: 0%;
+    transition:opacity 300ms ease;
+}
+.sec-1-one:hover #ig-2{
+    opacity:100%;
+}
+.sec-1-two{
+    margin-right: 15%;
+}
+.sec-1{
+    margin-top: 10%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}

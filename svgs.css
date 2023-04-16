@@ -1,0 +1,108 @@
+body{
+    padding:0;
+    margin:0;
+    background-image: url(/svgs/svgsbg.png);
+    background-size: cover;
+}
+html,body{
+    height:100vh;
+    width: 100%;
+}
+.buttons{
+    width:max-content;
+    margin:auto;
+    transform: translateY(20rem);
+}
+.btns{
+    box-sizing: border-box;
+    width: 5rem;
+    height:5rem;
+    padding: 0;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 0.2rem ;
+}
+.ham-1 > .line{
+    transition: rotate 0.2s ease-in-out, y 0.3s ease 0.2s,
+     opacity 0s ease 0.3ms;
+    transform-origin: center;
+}
+.ham-1:hover .line{
+    transition: rotate 0.2s ease-in-out 300ms, y 0.3s ease, 
+    opacity 0.3s ease 0.3ms, fill 1s ease;
+    transform-origin: center;
+}
+.ham-1:hover :is(.top-r, .end-r){
+    y:34;
+}
+.ham-1:hover .mid-r{
+    opacity:0;
+} 
+.ham-1:hover .top-r{
+    rotate:45deg;
+    fill: rgb(11, 58, 58);
+}
+.ham-1:hover .end-r{
+    rotate:-45deg;
+    fill: rgb(11, 58, 58);
+}
+/*button 2*/
+.ham-2 > .line{
+    stroke:rgb(68, 5, 5);
+    stroke-width:10;
+    stroke-linecap:round;
+    stroke-dasharray: 53;
+    stroke-dashoffset: 0;
+}
+.bt-2{
+    color:brown;
+}
+.ham-2:hover :is(.line){
+    animation:  initialH 1s forwards;
+}
+.ham-2  :is(.li-1, .li-2){
+    animation: finalH 1s forwards;
+}
+.ham-2 > .li-1{
+    --rotation:45deg;
+    --rot:-45deg;
+    transform-origin: 27px 34px;
+}
+.ham-2 > .li-2{
+    --rotation:-45deg;
+    --rot:45deg;
+    transform-origin: 27px 42px;
+}
+@keyframes initialH {
+    0%{stroke-dashoffset: 0;}
+    25%{stroke-dashoffset: 52.9;}
+    75%{stroke-dashoffset: 52.9;rotate:var(--rotation)}
+    100%{stroke-dashoffset:0;rotate:var(--rotation)}
+}
+@keyframes finalH {
+    0%{stroke-dashoffset: 0;rotate:var(--rotation)}
+    25%{stroke-dashoffset: 52;rotate:var(--rotation)}
+    50%{stroke-dashoffset: 52;}
+    100%{stroke-dashoffset: 0;}
+}
+.bt-3{
+    overflow: hidden;
+}
+.ham-3{
+    stroke:rgb(7, 58, 59);
+    fill:none;
+    stroke-width: 10;
+    stroke-linecap:round ; 
+    stroke-linejoin:round;
+    stroke-dasharray: 37 58 37 1000;    
+}
+.ham-3 > path{
+    transition: 1s ease-in-out;
+}
+.ham-3:hover path{
+    rotate: 45deg;
+    translate: 34px -36px;
+    scale: 150%;
+    stroke-dasharray: 33 81 33 1000;
+    stroke-dashoffset: -165;
+}

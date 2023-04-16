@@ -1,0 +1,28 @@
+body{
+    background-color:rgb(178, 219, 255);
+    margin:0;
+    display: flex;
+    justify-content: center;
+}
+#img1{
+    width: 18rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+.container{
+    background-color: rgb(218, 238, 254);
+    width: 20rem;
+    border-radius: 0.5rem;
+}
+.attr{
+    text-align: center;
+    position:absolute;
+    top: 18%;
+}
+.container>p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container>a{
+    text-decoration: none;
+    color: rgb(0, 97, 182);
+}

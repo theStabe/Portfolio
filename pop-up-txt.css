@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Orbitron&family=Yantramanav:wght@300&display=swap');
+body, html{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    height: 100%;
+    width:100%;
+}
+body{
+    background-color: rgb(23, 11, 11);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero{
+    position: relative;
+}
+.person_container{
+    position: relative;
+    width: 20rem;
+    height: 24rem;
+    border-radius: 0 0 200vh 200vh;
+    overflow: hidden;
+    transition: transform 300ms;
+}
+.person_bg{
+    background-color: aliceblue;
+    position: absolute;
+    height:20rem;
+    width:100%;
+    object-fit: cover;
+    inset: auto 0 0;
+    border-radius: 200vw;
+}
+.person_stabe{
+    width:20rem;
+    height:24rem;
+    position: relative;
+    display:block;
+    object-fit: cover;
+    inset: 0 0 0 0;
+    transition: transform 350ms;
+}
+.con_text p{
+    color:  rgb(223, 42, 42);
+    font-size: 0;
+    text-align: center;
+    font-family: faster one , sans-serif;
+    position: absolute;
+    inset: auto 0 0;
+    transform: translateY(-2rem);
+    transition: transform 300ms, font-size 500ms, 
+    visibility 300ms;
+    cursor: default;
+}
+.person_container:hover{
+    transform: scale(1.1);
+}
+.person_container:hover .person_stabe{
+    transform: translateY(1.4rem);
+}
+.person_container:hover .con_text p{
+    transform: translateY(-1.3rem);
+    font-size: 2.4rem;
+    visibility: visible;
+}
