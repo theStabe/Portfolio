@@ -1,0 +1,244 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 550;
+    text-decoration: none;
+    color: rgb(60, 34, 0);
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body, html{
+    width:100%;
+    height:fit-content;
+}
+.head{
+    position: absolute;
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    height:fit-content;
+}
+.brand-name > a{
+    font-size: 1.5rem;
+}
+.brand-name{
+    margin:0.6rem 1rem;
+}
+.head-li{
+    list-style: none;
+    display: flex;
+}
+.nav{
+    display:flex;
+    align-items: center;
+    width:27rem;
+}
+.head-li > *{
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    transition: background-color 300ms ease;
+}
+.head-li > *:hover{
+    background-color: aliceblue;
+}
+.hero-wrapper{
+    background-color: rgba(8, 39, 40, 0.85);
+    height:fit-content;
+}
+.hero{
+    background-color: chartreuse;
+    background-image: url(sunnyside\ \(10\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding-top:14rem;
+    padding-bottom: 14rem;
+
+}
+.hero>p{
+    font-size: 4rem;
+}
+.prom{
+    display:flex;
+    flex-wrap: wrap;
+}
+.proms{
+    width:50vw;
+     height:60vh; 
+}
+::-webkit-scrollbar{
+    width:0em;
+}
+.high{
+    text-shadow: 0px 5px 10px rgb(140, 210, 0);
+    cursor:pointer;
+    padding: 2rem;
+}
+.proms> h2{
+    padding: 2rem;
+}
+.proms > p{
+    font-weight: 400;
+}
+.prom > *{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding-inline: 2rem;
+    justify-content: center;
+    background-color:aliceblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.proms:hover{
+    scale: 97%;
+    border-radius: 2rem;
+}
+.proms{
+    transition: scale 300ms ease
+    ,border-radius 300ms ease;
+}
+.prom > :nth-child(2){
+    background-image: url(sunnyside\ \(3\).jpg);
+
+}
+.prom > :nth-child(3){
+    background-image: url(sunnyside\ \(1\).jpg);
+}
+.prom > :nth-child(5){
+    background-image: url(sunnyside\ \(9\).jpg);
+    background-position: top;
+    padding-top: 15rem;
+    font-size:larger;
+}
+.prom > :nth-child(6){
+    background-image: url(sunnyside\ \(12\).jpg);
+    background-position:top;
+    padding-top: 15rem;
+    font-size:larger;
+}
+.rvws{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.abt > .fade{
+    padding:3rem;
+    opacity: 60%;
+    letter-spacing: 0.3rem;
+}
+.clients{
+    display:flex;
+    flex-direction: row;
+    /* margin:3rem auto; */
+}
+.client{
+    width:30vw;
+    padding-inline: 2rem;
+}
+.client > .fade{
+    opacity:70%;
+    margin-bottom: 2rem;
+}
+.client>h2{
+    margin-top:3rem;
+}
+.clt-img{
+    border-radius: 10rem;
+    margin-bottom: 2rem;
+    transition: scale 200ms ease-in-out;
+}
+.clt-img:hover{
+    scale:107%;
+}
+.client > p{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+.gal{
+    display:flex;   
+    flex-wrap: wrap;
+}
+.gal-imgs{
+    width:25vw;
+    height: 25vw;
+}
+.foot{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(0, 207, 138);
+}
+.foot > *{
+    margin-top:2rem;
+    margin-bottom: 2rem;
+}
+.quick-links > *{
+    margin-inline: 2rem;
+    font-size: 1.5rem;
+}
+.svgs>*{
+    margin-inline: 1rem;
+    font-size: 1.5rem;
+}
+@media(max-width:800px){
+    .prom{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .proms{
+        width:100vw;
+        height:60vh;
+    }
+    .clients{
+        flex-direction: column;
+    }
+    .client{
+        width:80vw;
+    }
+    .gal-imgs{
+        width:50vw;
+        height: 50vw;
+    }
+}
+@media(max-width:760px){
+    .head-li{
+        display:none;
+    } 
+    .nav{
+        display:contents;
+    }
+    .proms{
+        height:50vh;
+    }
+    .nav::before{
+        font-family: "Font Awesome 5 Free"; 
+        font-weight: 900; 
+        font-size: 1.5rem;
+        content:"\f0c9";
+        -webkit-font-smoothing: antialiased;
+        margin: auto 1rem;
+    }
+}
+@media(max-width:550px){
+    html{
+        font-size: 80%;
+    }
+}
+@media(max-width:480px){
+    html{
+        font-size: 70%;
+    }
+    .quick-links{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .quick-links > *{
+        margin:1rem auto;
+    }
+}
