@@ -47,4 +47,8 @@ body:hover{
     color:aliceblue;
     text-decoration: none;
     cursor:pointer;
+    transition: scale 200ms ease-in-out;
+}
+.projects > a:hover{
+    scale:104%;
 }
