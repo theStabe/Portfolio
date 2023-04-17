@@ -52,3 +52,21 @@ body:hover{
 .projects > a:hover{
     scale:104%;
 }
+@media(max-width:690px){
+    html{
+        font-size: 80%;
+    }
+}
+@media(max-width:550px){
+    html{
+        font-size: 60%;
+    }
+}
+@media(max-width:420px){
+    html{
+        font-size: 40%;
+    }
+    .projects::after{
+        transform: translate(19vw,2vh);
+    }
+}
